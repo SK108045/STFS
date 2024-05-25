@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/SimkaLogo.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,8 +43,9 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">Simka</h2>
+        <a href="index.html" class="navbar-brand bg-white d-flex align-items-center px-4 px-lg-0">
+            <img src="img/SimkaLogo.png" alt="Simka Logo" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="mb-2" style="color: red;">Simka</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +63,7 @@
                         <a href="quote.html" class="dropdown-item">Free Quote</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <!--<a href="404.html" class="dropdown-item">404 Page</a>--->
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -305,14 +306,19 @@
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="contact.html">Support</a>
                 </div>
+              
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Keep up to date with the current ongoing trends in the Fire Department Industry</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <form action="backend/NewsletterEmail.php" method="POST">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" name="email" id="email" type="email" placeholder="Your email" required>
+                            <button name="signup" type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </form>
                     </div>
                 </div>
+                
+              
             </div>
         </div>
         <div class="container">

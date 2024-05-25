@@ -1,0 +1,11 @@
+<?php
+$connect = mysqli_connect("localhost", "root", "", "data", 4306);
+if (!$connect) {
+    echo "failed";
+}
+
+$connect = mysqli_connect("sql307.infinityfree.com", "if0_36298709", "rifB2t9LSH", "if0_36298709_data", 3306);
+if (!$connect) {
+    echo "failed";
+}
+?>
